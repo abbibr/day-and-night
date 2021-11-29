@@ -1,0 +1,62 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/night.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all ease 0.5s;
+}
+
+.label
+{
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+.checkbox
+{
+    display: none;
+} 
+.span
+{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 5px;
+    position: absolute;
+    left: 0;
+    transition: all ease 0.5s;
+}
+.label .checkbox:checked ~ .span
+{
+    left: 60px;
+}
+.dayBackground
+{
+    background-image: url("images/day.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dayBackground .label
+{
+    border-color: #2c3e50;
+}
+.dayBackground .label .span
+{
+    background-color: #2c3e50;
+}
